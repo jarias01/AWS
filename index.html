@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<title>Primera web, presentación</title>
+</head>
+<body >
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-8">Hola mi nombre es Arias Rodriguez Joel Alejandro</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<ul class="nav nav-tabs" role="tablist" id="presentation-tabs">
+				<li role="presentation" class="active">
+					<a href="#github" aria-controls="github" role="tab" data-toggle="tab">Github</a>
+				</li>
+				<li role="presentation">
+					<a href="#stack" aria-controls="stack" role="tab" data-toggle="tab">Stackoverflow</a>
+				</li>
+				<li role="presentation">
+					<a href="#contact-info" aria-controls="contact-info" role="tab" data-toggle="tab">Contact Information</a>
+				</li>
+			</ul>
+
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="github">
+					<div class="panel panel-default">
+					  <div class="panel-body">
+					    <h4>
+					    	<span class="label label-primary">GitHub:</span>
+					    	<a href="https://github.com/jarias01" target="_blank" title="github">Jarias01</a>
+					    <h4>
+					  </div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="stack">
+					<div class="panel panel-default">
+					  <div class="panel-body">
+					    <h4>
+					    	<span class="label label-primary">Stackoverflow:</span>
+					    	<a href="http://stackoverflow.com/users/5304848/jalejandro" target="_blank" title="github">Jalejandro</a>
+					    <h4>
+					  </div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="contact-info">
+					<div class="panel panel-default">
+					  <div class="panel-body">
+					    <h4>
+					    	<span class="label label-primary">E-mail:</span>
+							<span><b> j.alejandroar01@gmail.com</b></span>
+					    <h4>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$('#curriculum-tabs a').click(function (e) {
+			e.preventDefault();
+  			$(this).tab('show');
+		});
+	</script>
+</body>
+</html>
